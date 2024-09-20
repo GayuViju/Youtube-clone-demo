@@ -1,0 +1,56 @@
+
+.scroll-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding-top:-5px;
+    padding-bottom:25px;
+    white-space: nowrap;
+    
+}
+
+.scroll-menu {
+    display: flex;
+    flex-grow: 1;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.scroll-item1
+{
+    background-color:black;
+    color:white;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.scroll-item {
+    background-color: #dcd9d9;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    flex: 0 0 auto;
+    border:1px solid lightgray; 
+}
+.scroll-item:active {
+    background-color: #000000;
+    color:white;
+}
+.right {
+    right: 0;
+}
+
+/* Hide scrollbar for better appearance */
+.scroll-menu::-webkit-scrollbar {
+    display: none;
+}
+
